@@ -1,0 +1,17 @@
+# OCR
+easyocr
+
+# Deep learning backend (CPU only – safest for Windows)
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
+torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+# Computer vision dependency (used by EasyOCR)
+opencv-python
+
+# EURI LangGraph
+euri-langgraph
+
+# Utilities (pulled automatically but kept explicit for stability)
+numpy
+pillow

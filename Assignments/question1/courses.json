@@ -1,0 +1,26 @@
+[
+    {
+        "course_id": 1,
+        "course_name": "Aman",
+        "credits": 4,
+        "instructor": "Shivam"
+    },
+    {
+        "course_id": 2,
+        "course_name": "Machine Learning",
+        "credits": 4,
+        "instructor": "Dr. Smith"
+    },
+    {
+        "course_id": 3,
+        "course_name": "Deep Learning",
+        "credits": 3,
+        "instructor": "Dr. Brown"
+    },
+    {
+        "course_id": 4,
+        "course_name": "Kiran",
+        "credits": 4,
+        "instructor": "Ismail"
+    }
+]

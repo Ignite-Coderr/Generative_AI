@@ -1,0 +1,18 @@
+# ──────────────────────────────────────────────
+# requirements.txt  –  Langchain / Runnable
+# Generated for:
+#   • runnable_sequence.py
+#   • testing.ipynb
+# ──────────────────────────────────────────────
+
+# ── Core LangChain packages ──────────────────
+langchain==1.2.13          # RunnableSequence (langchain.schema.runnable)
+langchain-core==1.4.0      # PromptTemplate, StrOutputParser, RunnableLambda
+langchain-openai==1.1.12   # ChatOpenAI
+
+# ── OpenAI SDK & tokeniser (transitive, pinned) ──
+openai==2.29.0             # required by langchain-openai
+tiktoken==0.12.0           # tokeniser used internally by langchain-openai
+
+# ── Environment / config ─────────────────────
+python-dotenv==1.1.0       # load_dotenv()

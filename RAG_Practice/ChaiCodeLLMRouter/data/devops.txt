@@ -1,0 +1,15 @@
+DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
+
+## CI/CD (Continuous Integration/Continuous Deployment)
+- **CI**: The practice of automating the integration of code changes from multiple contributors into a single software project.
+- **CD**: The practice of automating the deployment of code changes to a testing or production environment.
+
+## Docker
+Docker is a platform for developing, shipping, and running applications in containers.
+- **Container**: A lightweight, standalone, executable package of software that includes everything needed to run an application.
+- **Dockerfile**: A text document that contains all the commands a user could call on the command line to assemble an image.
+- `docker build`: Build an image from a Dockerfile.
+- `docker run`: Run a command in a new container.
+
+## Kubernetes
+Kubernetes is an open-source container orchestration system for automating application deployment, scaling, and management.

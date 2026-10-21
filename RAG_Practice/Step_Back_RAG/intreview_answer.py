@@ -1,0 +1,1 @@
+# I built a production-grade Decomposition RAG system where complex queries are broken into sub-queries, retrieved iteratively from a Docker-hosted Qdrant vector database, context is accumulated step-by-step, and a final grounded answer is generated via OpenAI.

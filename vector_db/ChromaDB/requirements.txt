@@ -1,0 +1,10 @@
+chromadb
+torch
+torchvision
+transformers
+sentence-transformers
+pillow
+numpy
+tqdm
+tf-keras
+pymupdf

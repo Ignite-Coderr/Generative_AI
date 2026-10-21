@@ -1,0 +1,5 @@
+fastapi
+uvicorn 
+
+# pusing code on github
+# then deployin on render

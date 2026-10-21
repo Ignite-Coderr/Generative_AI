@@ -1,0 +1,13 @@
+# LangChain Core
+langchain-core
+
+# LangChain Integrations
+langchain-openai       # stroutputparser1.py -> ChatOpenAI
+langchain-huggingface  # jsonoutputparser.py, pydanticoutputparser.py, structuredoutputparser.py -> ChatHuggingFace, HuggingFaceEndpoint
+langchain-classic      # structuredoutputparser.py -> StructuredOutputParser, ResponseSchema
+
+# Data Validation
+pydantic               # pydanticoutputparser.py -> BaseModel, Field
+
+# Environment Variable Management
+python-dotenv          # all files -> load_dotenv

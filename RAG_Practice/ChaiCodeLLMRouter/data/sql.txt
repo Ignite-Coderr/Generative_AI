@@ -1,0 +1,22 @@
+SQL (Structured Query Language) is a standard language for storing, manipulating, and retrieving data in databases.
+
+## DDL (Data Definition Language)
+- `CREATE TABLE`: Creates a new table.
+- `ALTER TABLE`: Modifies a table.
+- `DROP TABLE`: Deletes a table.
+
+## DML (Data Manipulation Language)
+- `INSERT INTO`: Inserts new data into a database.
+- `UPDATE`: Updates data in a database.
+- `DELETE`: Deletes data from a database.
+
+## DQL (Data Query Language)
+- `SELECT`: Extracts data from a database.
+- `FROM`: Specifies the table to select from.
+- `WHERE`: Filters the records.
+- `GROUP BY`: Groups rows that have the same values into summary rows.
+- `ORDER BY`: Sorts the result set.
+
+## Joins
+- **INNER JOIN**: Returns records that have matching values in both tables.
+- **LEFT JOIN**: Returns all records from the left table, and the matched records from the right table.

@@ -1,0 +1,6 @@
+Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think and learn.
+Machine Learning (ML) is a subset of AI that enables systems to automatically improve from experience without explicit programming.
+Deep Learning is a subset of machine learning that uses neural networks with many layers.
+Natural Language Processing (NLP) allows computers to understand, interpret, and generate human language.
+Reinforcement Learning is an area of ML where an agent learns to make decisions by taking actions in an environment to maximize some reward.
+Computer Vision enables machines to interpret and make decisions based on visual data.

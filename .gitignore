@@ -1,0 +1,96 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+myenv/
+lc312/
+agentai/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# API Keys and Secrets
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+65/
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Project Specific
+miniconda.exe
+*.exe
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Model files (large files)
+*.h5
+*.pkl
+*.joblib
+*.model
+*.bin
+
+# Data files (if large)
+*.csv
+!example.csv
+*.parquet
+
+# Scripts
+remove_keys.py
+temp_notebook_parser.py
+enhance_notebook.py

@@ -1,0 +1,37 @@
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File Data_Preprocessing/IMDB Dataset.csv is 63.14 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: error: GH013: Repository rule violations found for refs/heads/main.        
+remote: 
+remote: - GITHUB PUSH PROTECTION        
+remote:   —————————————————————————————————————————        
+remote:     Resolve the following violations before pushing again        
+remote: 
+remote:     - Push cannot contain secrets        
+remote: 
+remote:             
+remote:      (?) Learn how to resolve a blocked push        
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push        
+remote:             
+remote:             
+remote:       —— OpenAI API Key ————————————————————————————————————        
+remote:        locations:        
+remote:          - commit: 41ab5c35cea3d1e34a930ab34fdf9a465e5ad53b        
+remote:            path: Langchain/Assignments12/create_que1.py:38        
+remote:          - commit: 41ab5c35cea3d1e34a930ab34fdf9a465e5ad53b        
+remote:            path: Langchain/Assignments12/que1.ipynb:59        
+remote:          - commit: 41ab5c35cea3d1e34a930ab34fdf9a465e5ad53b        
+remote:            path: Langchain/complex_agent.ipynb:121        
+remote:          - commit: 41ab5c35cea3d1e34a930ab34fdf9a465e5ad53b        
+remote:            path: Langchain/db_agent.ipynb:55        
+remote:          - commit: 41ab5c35cea3d1e34a930ab34fdf9a465e5ad53b        
+remote:            path: Langchain/final_clean_nb.py:24        
+remote:             
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
+remote:        https://github.com/Aman-Husain-123/GenerativeAI_Learning_Journey/security/secret-scanning/unblock-secret/39AUkChYaiCZ7iaa6FoxirP4upa        
+remote:             
+remote: 
+remote: 
+To https://github.com/Aman-Husain-123/GenerativeAI_Learning_Journey
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/Aman-Husain-123/GenerativeAI_Learning_Journey'

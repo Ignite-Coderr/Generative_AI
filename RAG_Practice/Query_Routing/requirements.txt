@@ -1,0 +1,9 @@
+langchain
+langchain-community
+langchain-openai
+langchain-qdrant
+qdrant-client
+python-dotenv
+tiktoken
+beautifulsoup4
+requests

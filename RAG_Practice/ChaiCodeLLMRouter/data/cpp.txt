@@ -1,0 +1,19 @@
+C++ is a high-level, general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".
+
+## Memory Management
+C++ provides manual memory management using pointers.
+- `new`: Allocates memory on the heap.
+- `delete`: Deallocates memory.
+
+## Pointers and References
+- **Pointer**: A variable that holds the memory address of another variable.
+- **Reference**: An alias for another variable.
+
+## Object-Oriented Programming
+C++ supports OOP principles:
+- **Encapsulation**: Bundling data and methods that operate on that data within a class.
+- **Inheritance**: Deriving a class from another class.
+- **Polymorphism**: The ability of different classes to respond to the same message in different ways.
+
+## Standard Template Library (STL)
+The STL is a set of C++ template classes to provide common programming data structures and functions such as vectors, lists, queues, and stacks.

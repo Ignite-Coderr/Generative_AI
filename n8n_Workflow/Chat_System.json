@@ -1,0 +1,188 @@
+{
+  "name": "Chat_System",
+  "nodes": [
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "",
+        "options": {
+          "allowFileUploads": true,
+          "responseMode": "responseNodes"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -400,
+        -96
+      ],
+      "id": "9f4bf27c-5713-4ba3-9f69-f33c1287dce6",
+      "name": "When chat message received",
+      "webhookId": "214ed215-3a78-4588-ad90-5fc285e37719"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c055edc6-eeae-4fd8-952d-b4f5d722ad84",
+              "name": "chatInput",
+              "value": "={{ $json.chatInput }}",
+              "type": "string"
+            },
+            {
+              "id": "85237c64-fe54-468d-8259-64baf8ca2188",
+              "name": "sessionId",
+              "value": "={{ $json.sessionId }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -176,
+        -80
+      ],
+      "id": "1e937b1a-835d-428c-a367-ec9ea4ffc67c",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.euron.one/api/v1/euri/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n\"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"`{{ $json.chatInput }}`\"\n    }\n  ],\n  \"model\": \"gpt-4.1-nano\",\n  \"max_tokens\": 1000,\n  \"temperature\": 0.7\n}\n\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        80,
+        -80
+      ],
+      "id": "6b35b511-d9d4-4a07-af11-5f62495e5dfa",
+      "name": "HTTP Request",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "A1yYKfUGcFUyk8PG",
+          "name": "Bearer Auth account 6"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "25af39d6-004b-4409-8cd9-bbd98a1dca89",
+              "name": "choices[0].message.content",
+              "value": "={{ $json.choices[0].message.content }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        336,
+        -80
+      ],
+      "id": "68446ec8-8528-4b00-a854-7f7f0c9d81ee",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "message": "={{ $json.choices[0].message.content }}",
+        "waitUserReply": false,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chat",
+      "typeVersion": 1,
+      "position": [
+        544,
+        -80
+      ],
+      "id": "42b27519-80f5-41bd-bd62-3d7506f064c8",
+      "name": "Respond to Chat"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Respond to Chat",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner",
+    "saveExecutionProgress": true
+  },
+  "versionId": "48c0749f-9bea-4ae8-8e58-fdc9dcf25a9d",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "225f978495b3e83bc8d88ccff724fcb548509742c97eae5c81771084e8c9806c"
+  },
+  "id": "MBNWuPGJhs0c_J0TTuE1u",
+  "tags": []
+}

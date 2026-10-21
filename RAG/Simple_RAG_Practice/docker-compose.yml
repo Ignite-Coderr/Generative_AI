@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+  rag-chatbot:
+    build: .
+    depends_on:
+      - qdrant
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}          # Set in .env or shell
+      - QDRANT_URL=http://qdrant:6333
+      - DOCUMENTS_PATH=/data/documents
+      # Optional: override defaults
+      # - CHUNK_SIZE=500
+      # - CHUNK_OVERLAP=50
+      # - TOP_K=3
+    volumes:
+      - ./DOCUMENTS_PATH:/data/documents           # Mount your document folder
+    stdin_open: true
+    tty: true
+
+volumes:
+  qdrant_storage:

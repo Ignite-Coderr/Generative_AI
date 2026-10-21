@@ -1,0 +1,11 @@
+streamlit
+python-dotenv
+google-genai
+Pillow
+youtube-transcript-api
+langchain
+langchain-openai
+langchain-community
+langgraph
+tavily-python
+pyngrok

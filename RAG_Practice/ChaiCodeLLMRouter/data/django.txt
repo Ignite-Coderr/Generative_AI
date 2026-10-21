@@ -1,0 +1,17 @@
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It follows the Model-View-Template (MVT) architectural pattern.
+
+## Core Components
+- **Models**: Defines the data structure. Django uses an ORM (Object-Relational Mapping) to interact with the database.
+- **Views**: Handles the logic and returns a response.
+- **Templates**: Handles the presentation layer (HTML).
+- **URLs**: Maps URL patterns to views.
+
+## Commands
+- `django-admin startproject [name]`: Create a new Django project.
+- `python manage.py startapp [name]`: Create a new app within a project.
+- `python manage.py runserver`: Start the development server.
+- `python manage.py migrate`: Apply database migrations.
+- `python manage.py makemigrations`: Create new migrations based on model changes.
+
+## Admin Interface
+Django provides a built-in admin interface that is automatically generated from the models.

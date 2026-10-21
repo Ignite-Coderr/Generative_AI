@@ -1,0 +1,6 @@
+Python is an interpreted, high-level, general-purpose programming language.
+Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
+List comprehensions provide a concise way to create lists in Python.
+Python uses dynamic typing and a combination of reference counting and a cycle-detecting garbage collector for memory management.
+The Python Package Index (PyPI) is the official third-party software repository for Python.
+Python's built-in data structures include lists, tuples, sets, and dictionaries.

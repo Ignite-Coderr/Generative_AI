@@ -1,0 +1,13 @@
+qdrant-client
+sentence-transformers
+torch
+transformers
+nltk
+numpy
+langchain
+langchain-community
+langchain-openai
+langchain-qdrant
+langchain-text-splitters
+python-dotenv
+pypdf
